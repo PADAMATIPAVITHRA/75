@@ -57,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $mail->Port = 587;
 
                     //Recipients
-                    $mail->setFrom('vdurga400@gmail.com', 'CHINTHA VIJAYA DURGA'); // Replace with your email and name
+                    $mail->setFrom('vdurga400@gmail.com', 'RESET PASSWORD'); // Replace with your email and name
                     $mail->addAddress($email); // Add recipient
 
                     //Content
