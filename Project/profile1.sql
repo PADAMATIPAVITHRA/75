@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Apr 02, 2024 at 03:59 PM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- Host: 127.0.0.1
+-- Generation Time: Oct 16, 2024 at 08:37 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -48,7 +48,9 @@ INSERT INTO `career` (`ID`, `STUDIED`, `UNIVERSITY`, `PERCENTAGE`, `PASSED_OUT_Y
 (23, '3234', '242', 24.00, 1903, '232', 'vdurga400@gmail.com'),
 (24, 'INTER', 'ATP', 100.00, 2021, 'MATHEMATICS', 'vijayadurga1649@gmail.com'),
 (26, 'BTECH', 'JNTUH', 95.00, 6, 'Computer Engineering', 'vijayadurga1649@gmail.com'),
-(28, 'M.Tech', 'JNTUA', 89.00, 2013, 'CSE', '214g1a32c1@srit.ac.in');
+(28, 'M.Tech', 'JNTUA', 89.00, 2013, 'CSE', '214g1a32c1@srit.ac.in'),
+(29, 'B-TECH', 'SRIT', 95.00, 2025, 'CSE', 'padamatipavithra@gmail.com'),
+(30, 'rer', 'red', 78.00, 2025, 'csd', '214g1a3275@srit.ac.in');
 
 -- --------------------------------------------------------
 
@@ -75,7 +77,8 @@ INSERT INTO `experience` (`ID`, `DESIGNATION`, `DEPARTMENT`, `ORGANIZATION_NAME`
 (5, 'CHINTHA', 'CSE(DS)', 's', '2024-03-21', '2024-03-21', '214g1a32c1@srit.ac.in'),
 (6, 'CHINTHA', 'IT', 'ZENZO', '2024-03-25', '2024-03-25', NULL),
 (10, 'save', 'jlgljg', 'SRIT', '2024-03-07', '2024-03-28', 'vdurga400@gmail.com'),
-(16, 'TEACHER', 'MATHS', 'GOVT', '2022-12-05', '2024-04-25', '214g1a32c1@srit.ac.in');
+(16, 'TEACHER', 'MATHS', 'GOVT', '2022-12-05', '2024-04-25', '214g1a32c1@srit.ac.in'),
+(17, 'Engineer', 'csd', 'srit', '2021-02-12', '2025-06-06', '214g1a3275@srit.ac.in');
 
 -- --------------------------------------------------------
 
@@ -123,7 +126,10 @@ CREATE TABLE `password_resets` (
 INSERT INTO `password_resets` (`id`, `email`, `token`, `created_at`, `otp`) VALUES
 (5, '214g1a32c1@srit.ac.in', '785bd668c80cfffaa9aab47b636c6992', '2024-04-01 13:44:20', '60326'),
 (32, 'vdurga400@gmail.com', '0c745c9ec79403a305ae74ad3389efc6', '2024-03-25 14:15:38', '22134'),
-(36, 'vijayadurga1649@gmail.com', 'a7aed8a493d52235701cb31fa60ed622', '2024-04-01 15:20:57', '66363');
+(36, 'vijayadurga1649@gmail.com', 'a7aed8a493d52235701cb31fa60ed622', '2024-04-01 15:20:57', '66363'),
+(37, '214g1a3275@srit.ac.in', '143ab541de032b77b337853e1c9c8475', '2024-04-07 05:20:39', '741605'),
+(38, 'padamatipavithra@gmail.com', '1a8d2b6a4b600a01d2c3e0130d4c5b12', '2024-04-07 05:24:29', '660799'),
+(39, 'padamatipavithra75@gmail.com', '7ea63f706e322a5e9654df6311165a11', '2024-10-16 17:12:13', '583616');
 
 -- --------------------------------------------------------
 
@@ -148,7 +154,22 @@ INSERT INTO `profile` (`id`, `name`, `email`, `mobile`, `address`, `designation`
 (4, 'CHINTHA VIJAYA DURGA', '214g1a32c1@srit.ac.in', '63029077222', 'ATP', 'Student'),
 (5, '', 'vdurga400@gmail.com', '', '', ''),
 (6, 'VIJAYA DURGA ', 'vijayadurga1649@gmail.com', '9951010056', '1-4-128', '1234'),
-(7, 'VIJAYA DURGA ', '214g1a3294@srit.ac.in', '09951010056', '2-1-446', '1234');
+(7, 'VIJAYA DURGA ', '214g1a3294@srit.ac.in', '09951010056', '2-1-446', '1234'),
+(8, 'pavi', 'padamatipavithra@gmail.com', '9381389676', 'anantapur', 'engineer'),
+(9, '', '', '', '', ''),
+(10, 'pavi', 'padamatipavithra@gmail.com', '9381389676', 'anantapur', 'engineer'),
+(11, 'pavithra', '', '334567887', 'ff', 'ff'),
+(12, 'pavithra', '', '', '', ''),
+(13, '', '', '', '', ''),
+(14, 'pavithra', 'kk', '44', 'wc', 'c'),
+(15, 'wwwwwwwwwwww', 'pavi@gmail.com', '22222222', 'grr3333333', 'grrwwwwwww'),
+(16, '', 'dddddddddddd', '', '', ''),
+(17, '', 'padamati@gmail.com', '', '', ''),
+(18, 'pavi', 'padamatipavithra@gmail.com', '9381389676', 'anantapur', 'engineer'),
+(19, 'pavi', 'padamatipavithra@gmail.com', '9381389676', 'anantapur', 'engineer'),
+(20, 'pavi', 'padamatipavithra@gmail.com', '9381389676', 'anantapur', 'engineer'),
+(21, 'pavi', 'padamatipavithra@gmail.com', '9381389676', 'anantapur', 'engineer'),
+(22, 'pavithra', '214g1a3275@srit.ac.infghjh', 'fggghgh', 'atpfffffff', 'engineerfffffffff');
 
 -- --------------------------------------------------------
 
@@ -257,7 +278,10 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `firstname`, `lastname`, `email`, `password`) VALUES
 (1, 'VIJAYA DURGA', 'CHINTHA', '214g1a32c1@srit.ac.in', 'Chitti@123'),
 (18, 'vd', 'c', 'vdurga400@gmail.com', '$2y$10$TslIsPqCgAZ3clzBZgYjDuNAX0NNDdnWhhT2enEjbafSp2pN9d0ha'),
-(36, 'vijaya ', 'CHINTHA', 'vijayadurga1649@gmail.com', 'Satya@123');
+(36, 'vijaya ', 'CHINTHA', 'vijayadurga1649@gmail.com', 'Satya@123'),
+(38, 'PAVITHRA', 'PADAMATI', 'padamatipavithra@gmail.com', 'P@vithra214!'),
+(39, 'pavithra', 'padamati', '214g1a3275@srit.ac.in', 'P@vithra214!'),
+(40, 'pavithra', 'padamati', 'padamatipavithra75@gmail.com', 'P@vithra214!');
 
 --
 -- Indexes for dumped tables
@@ -332,13 +356,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `career`
 --
 ALTER TABLE `career`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `experience`
 --
 ALTER TABLE `experience`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `membership`
@@ -350,13 +374,13 @@ ALTER TABLE `membership`
 -- AUTO_INCREMENT for table `password_resets`
 --
 ALTER TABLE `password_resets`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
 -- AUTO_INCREMENT for table `profile`
 --
 ALTER TABLE `profile`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `research`
@@ -380,7 +404,7 @@ ALTER TABLE `upskilling`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- Constraints for dumped tables
@@ -426,3 +450,4 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
